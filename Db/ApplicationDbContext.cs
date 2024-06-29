@@ -1,3 +1,4 @@
+using edhandho.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace edhandho.Db
@@ -10,7 +11,8 @@ namespace edhandho.Db
         }
 
         //Entities
-
+        DbSet<Users> Users => Set<Users>();
+        
         //Views
 
         //Store Procedures
